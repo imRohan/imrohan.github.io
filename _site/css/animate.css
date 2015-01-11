@@ -1225,7 +1225,6 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .fadeInRight {
-    
   -webkit-animation-name: fadeInRight;
           animation-name: fadeInRight;
 }
