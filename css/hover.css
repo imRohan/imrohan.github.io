@@ -353,8 +353,8 @@
   transition-timing-function: ease-out;
 }
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 /* Sink */
