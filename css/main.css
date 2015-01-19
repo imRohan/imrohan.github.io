@@ -10,10 +10,10 @@
 }
 
 h1{
- font-size: 10em;   
+ font-size: 8em;   
 }
 h2{
- font-size:7em;   
+ font-size:5em;   
 }
 #superLines{
     margin-top:-50px;
@@ -336,9 +336,18 @@ a:hover {
     
 }
 .contentText{
-     width: 60%;
+     width: 100%;
    margin-left: auto;
    margin-right: auto;
-   height: 800px;
+   height: auto;
     text-align: center;
+}
+
+#jackieImage {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/404.png);
+  width:303px;
+    height: 186px;
+      background-size: 303px 186px;
 }
