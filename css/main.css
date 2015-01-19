@@ -314,3 +314,11 @@ a:hover {
 .logoBlocks {
     margin-top:2em;
 }
+
+.myButton {
+    position: absolute;
+   top: 50%;
+   margin-top: -200px;/* half of #content height*/
+   left: 0;
+   width: 100%;
+}
