@@ -347,7 +347,119 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     background-image: url(../images/404.png);
-  width:303px;
+    width:303px;
     height: 186px;
       background-size: 303px 186px;
 }
+
+#termHeader {
+    margin-top:-20px;
+    margin-left:-20px;
+    margin-right:-20px;
+    height:22px;
+    background-color: #d1d1d5;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+}
+
+#termIcons {
+    background-image: url(../images/termIcons.png);
+    width:52px;
+    height:100%;
+    background-repeat: no-repeat;
+    margin-left:7px;
+    margin-top:5px;
+    display:inline-block;
+    float:left;
+}
+#termIcons:hover {
+     background-image: url(../images/termIconsHover.png);
+}
+
+#cursor {
+    background-image: url(../images/blink.gif);
+    margin-left:-5px;
+    margin-bottom: -2px;
+    width:7px;
+    height:14px;
+    display:inline-block;
+    
+    
+    
+}
+
+.termText {
+    margin-top:3px;
+    font-size:1em;
+    font-family: 'PT Mono',Arial, sans-serif; ;
+    color: #c7c7c7;
+    margin-right: 10px;
+    
+}
+.left{
+ float:left;
+ 
+        
+}
+.right{
+ width:50%;
+ float:right;
+ 
+        
+}
+.newRow{
+   clear:both;   
+    width:500px;
+    
+}
+.linefix{
+ display:inline-block;   
+}
+
+#termTitle {
+    color: black;
+    width:50px;
+    height:100%;
+    margin-left:38%;
+    margin-top:4px;
+    display:inline-block;
+    float:auto;
+}
+
+#termBody {
+    width:100%;
+    height:100%;
+    background-color: black;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    margin-left:-10px;
+    margin-top:5px;
+    
+}
+
+.custom-scroll {
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+}
+    
+
+
+.custom-scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #999;
+}
+
+
+.custom-scroll::-webkit-scrollbar-corner:vertical {
+    background-color: black;
+}
+
+

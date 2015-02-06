@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/hover.css">
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/rrssb.css">
+    <link rel="stylesheet" href="/css/avgrund.css">
+    <link rel="stylesheet" href="/css/component.css">
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="/css/responsive.css">
@@ -24,6 +26,7 @@
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -44,13 +47,17 @@
                     </a>
                     </div>
                 </div>
-                <span class="tagline">Hi, I'm Rohan. <br/>I  am a developer from Toronto, Canada</span>
+                <span class="tagline">Hi, I'm Rohan. <br/>I  am a developer from Toronto.
+                    
+					<button onclick="javascript:openDialog();" class="btn btn-1 btn-1a">About Me</button>
+                    
+                    </span>
             </div>
             <div class="footer">
                 <span id="footer-links">
-            <a href="" class="footer-link hvr-underline-reveal"><i class="fa fa-linkedin"></i> LinkedIn</a> <span class="separator">&bull;</span>
-                <a href="https://twitter.com/RohanLikhite" class="footer-link hvr-underline-reveal"><i class="fa fa-twitter"></i> Twitter</a>  <span class="separator">&bull;</span>
-                <a href="https://github.com/imRohan" class="footer-link hvr-underline-reveal"><i class="fa fa-github-alt"></i> GitHub</a>
+            <a target="_blank" href="https://ca.linkedin.com/pub/rohan-likhite/a6/495/950" class="footer-link hvr-underline-reveal"><i class="fa fa-linkedin"></i> LinkedIn</a> <span class="separator">&bull;</span>
+                <a target="_blank" href="https://twitter.com/RohanLikhite" class="footer-link hvr-underline-reveal"><i class="fa fa-twitter"></i> Twitter</a>  <span class="separator">&bull;</span>
+                <a target="_blank" href="https://github.com/imRohan" class="footer-link hvr-underline-reveal"><i class="fa fa-github-alt"></i> GitHub</a>
                 </span>
             </div>
             <div class="posts">
@@ -74,13 +81,6 @@
                         <a class="post-title hvr-float" href="/posts/2014/06/17/relax/">
                             <span class="post-date">17 Jun 2014</span>
                             Just Relax.
-                        </a>
-                    </li>
-                    
-                    <li class="post-link">
-                        <a class="post-title hvr-float" href="/posts/2014/06/17/The-Birth-and-Death/">
-                            <span class="post-date">17 Jun 2014</span>
-                            The Birth and Death of a Repo
                         </a>
                     </li>
                     
@@ -245,10 +245,87 @@
 
 
     </div>
+
+    <!-- MODAL -->
+    <aside id="rohan-about" class="avgrund-popup">
+        <div id="termHeader">
+            <a href="" onclick="javascript:closeDialog();">
+                <div id="termIcons"></div>
+                <div id="termTitle">1. bash</div>
+            </a>
+        </div>
+        <div id="termBody" class="custom-scroll">
+            <p class="termText">
+                Last updated: Fri Feb 6 9:21:48 on ttys000
+                <br/>Rohan-Likhites-MacBook-Pro:~ rohanlikhite$ cd Documents
+                <br/>Rohan-Likhites-MacBook-Pro:Documents rohanlikhite$ cat myBio.txt
+                <br/>
+                <br/>About
+
+                <br/>-----/
+                <br/>> I am a creative developer who specializes in developing AR/VR applications. I have experience designing and developing applications for mobile platforms and have also built responsive websites including a few small web apps. 
+                <br/>
+                <br/>Skills
+                <br/>------/
+                <br/>> C#, C++, Objective C, Java, JavaScript (JQuery), HTML5, CSS3, RSS, Bootstrap 3, XML, Source Code Management (GIT + SVN), Bower, Unity3D, Open Frameworks, Processing, MAX MSP, VPT7, Adobe Creative Suite, Autocad, Revit, Oculus Rift, META SpaceGlass.
+                <br/>
+                <br/>
+            </p>
+            <p class="termText left">
+                Other Interests
+                <br/>---------------/
+                <br/>-Tennis
+                <br/>-Reading
+                <br/>-Formula One
+                <br/>-Architecture
+                <br/>-Green Tea
+            </p>
+            <p class="termText right">
+                     Links
+                <br/>-----/
+                <br/>Email: <a href="mailto:contact@rohanlikhite.com">contact@rohanlikhite.com</a> 
+                <br/>Github:
+                <a target="_blank" href="https://github.com/imRohan">imRohan</a>
+                <br/>LinkedIn:
+                <a target="_blank" href="https://www.linkedin.com/pub/rohan-likhite/a6/495/950">rohan-likhite</a> 
+                <br/>Twitter: <a  target="_blank" href="https://twitter.com/RohanLikhite">@rohanlikhite</a>
+                <br/>Medium: <a target="_blank" href="https://medium.com/@RohanLikhite">@RohanLikhite</a>
+            </p>
+            <p class="termText newRow">
+               
+                <br/>
+                >Press ESC to <a href="" onclick="javascript:closeDialog();">close</a> window
+                 <br/>
+                >Lovingly created by Rohan Likhite - 2015
+                
+                
+            </p>
+            
+            <p class="termText linefix">
+            <br/>Rohan-Likhites-MacBook-Pro:Documents rohanlikhite$ 
+            </p>
+<div id="cursor"></div>
+
+        </div>
+    </aside>
+
+    <!-- / MODAL -->
     <script src="/scripts/rrssb.min.js" type="text/javascript"></script>
 
     <script src="/scripts/responsive.js" type="text/javascript"></script>
     <script src="/scripts/particles.js" type="text/javascript"></script>
+
+    <script src="/scripts/avgrund.js" type="text/javascript"></script>
+
+    <script>
+        function openDialog() {
+            Avgrund.show("#rohan-about");
+        }
+
+        function closeDialog() {
+            Avgrund.hide();
+        }
+    </script>
 
 
     <script>
