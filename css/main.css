@@ -367,6 +367,7 @@ a:hover {
 
 #termIcons {
     background-image: url(../images/termIcons.png);
+    background-size: 52px 12px;
     width:52px;
     height:100%;
     background-repeat: no-repeat;
@@ -377,7 +378,8 @@ a:hover {
     cursor:default;
 }
 #termIcons:hover {
-     background-image: url(../images/termIconsHover.png);
+    background-image: url(../images/termIconsHover.png);
+    background-size: 52px 12px;
     cursor:default;
 }
 
@@ -466,3 +468,8 @@ a:hover {
 }
 
 
+
+#termWindow {
+    margin-top:-25%;
+    
+}
