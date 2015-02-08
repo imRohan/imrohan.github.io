@@ -30,6 +30,19 @@
 
     <!-- Font Awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- JQuery -->
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    
+     <script type='text/javascript'>
+        $(window).load(function () {
+            $("#rohan-about").draggable({
+                handle: ".dragHandle",
+                snap: false
+            });
+        }); 
+    </script>
 </head>
 
 <body>
@@ -48,10 +61,10 @@
                     </div>
                 </div>
                 <span class="tagline">Hi, I'm Rohan. <br/>I  am a developer from Toronto.</span>
-                    
-					<button onclick="javascript:openDialog();" class="btn btn-1 btn-1a">About Me</button>
-                    
-                    
+
+                <button onclick="javascript:openDialog();" class="btn btn-1 btn-1a">About Me</button>
+
+
             </div>
             <div class="footer">
                 <span id="footer-links">
@@ -266,12 +279,12 @@
 
     <!-- MODAL -->
     <aside id="rohan-about" class="avgrund-popup">
-        <div id="termHeader">
+        <div id="termHeader" class="dragHandle">
             <a onclick="javascript:closeDialog();">
                 <div id="termIcons"></div>
-                 </a>
-                <div id="termTitle">1. bash</div>
-           
+            </a>
+            <div id="termTitle">1. bash</div>
+
         </div>
         <div id="termBody" class="custom-scroll">
             <p class="termText">
@@ -282,7 +295,7 @@
                 <br/>About
 
                 <br/>-----/
-                <br/>> I am a creative developer who specializes in developing AR/VR applications. I have experience designing and developing applications for mobile platforms and have also built responsive websites including a few small web apps. 
+                <br/>> I am a creative developer who specializes in developing AR/VR applications. I have experience designing and developing applications for mobile platforms and have also built responsive websites including a few small web apps.
                 <br/>
                 <br/>Skills
                 <br/>------/
@@ -300,51 +313,54 @@
                 <br/>-Green Tea
             </p>
             <p class="termText right">
-                     Links
+                Links
                 <br/>-----/
                 <br/>Email: <a href="mailto:contact@rohanlikhite.com">contact@rohanlikhite.com</a> 
                 <br/>Github:
                 <a target="_blank" href="https://github.com/imRohan">imRohan</a>
                 <br/>LinkedIn:
                 <a target="_blank" href="https://www.linkedin.com/pub/rohan-likhite/a6/495/950">rohan-likhite</a> 
-                <br/>Twitter: <a  target="_blank" href="https://twitter.com/RohanLikhite">@rohanlikhite</a>
+                <br/>Twitter: <a target="_blank" href="https://twitter.com/RohanLikhite">@rohanlikhite</a>
                 <br/>Medium: <a target="_blank" href="https://medium.com/@RohanLikhite">@RohanLikhite</a>
             </p>
             <p class="termText newRow">
-               
-                <br/>
-                >Press ESC to <a  onclick="javascript:closeDialog();">close</a> window
-                 <br/>
-                >Lovingly crafted by Rohan Likhite - 2015
-                
-                
+
+                <br/>>Press ESC to <a onclick="javascript:closeDialog();">close</a> window
+                <br/>>Lovingly crafted by Rohan Likhite - 2015
+
+
             </p>
-            
+
             <p class="termText linefix">
-            <br/>Rohan-Likhites-MacBook-Pro:Documents rohanlikhite$ 
+                <br/>Rohan-Likhites-MacBook-Pro:Documents rohanlikhite$
             </p>
-<div id="cursor"></div>
+            <div id="cursor"></div>
 
         </div>
     </aside>
 
     <!-- / MODAL -->
-    
+
     <!-- ANALYTICS -->
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-59458364-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        ga('create', 'UA-59458364-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <!-- / ANALYTICS -->
-    
-    <script src="/scripts/rrssb.min.js" type="text/javascript"></script>
 
+    <script src="/scripts/rrssb.min.js" type="text/javascript"></script>
     <script src="/scripts/responsive.js" type="text/javascript"></script>
     <script src="/scripts/particles.js" type="text/javascript"></script>
 
