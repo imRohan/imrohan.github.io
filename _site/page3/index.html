@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="/css/rrssb.css">
     <link rel="stylesheet" href="/css/avgrund.css">
     <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/goalProgress.css">
+    <link rel="stylesheet" href="/css/pace-theme-minimal.css">
+    
 
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="/css/responsive.css">
@@ -33,7 +36,8 @@
     
     
     <!-- JQuery -->
-    <script src="/scripts/rrssb.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../scripts/pace.js"></script>
+    <script type="text/javascript" src="/scripts/rrssb.min.js"></script>
     <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.2.min.js'></script> 
     <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
     
@@ -46,6 +50,7 @@
             });
         }); 
     </script>
+    <script type="text/javascript" src="/scripts/goalProgress.min.js"></script>
 
 </head>
 
@@ -79,6 +84,13 @@
             </div>
             <div class="posts">
                 <ul class="posts-list">
+                    
+                    <li class="post-link">
+                        <a class="post-title hvr-float" href="/posts/2015/02/08/books/">
+                            <span class="post-date">08 Feb 2015</span>
+                            My Reading List
+                        </a>
+                    </li>
                     
                     <li class="post-link">
                         <a class="post-title hvr-float" href="/posts/2014/08/23/portola/">
@@ -177,27 +189,132 @@
   </div>
   <div id="post-info">
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/valley.jpg">
+      <img id="cover-photo" src="/images/books.jpg">
     </div>
     <div id="info-container">
-      <h1 id="title">A Trip down to Meta-View</h1>
-      <span id="date">23 Aug 2014</span>
+      <h1 id="title">My Reading List</h1>
+      <span id="date">08 Feb 2015</span>
     </div>
   </div>
 
   <div class="post">
-    <h3 id="meta-view--their-space-glass">Meta View &amp; Their Space Glass</h3>
+    <h3 id="an-ever-expanding-list-of-books-i-want-to-read-in-2015">An ever expanding list of books I want to read in 2015</h3>
 
-<p>Random turn of events. I have been asked by <a href="https://www.google.ca/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CB0QFjAA&amp;url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSteve_Mann&amp;ei=W8f4U-uILY_esASE-YHQBA&amp;usg=AFQjCNEmyU5NSBoX9kOWnviJXsaD4PD0nQ&amp;sig2=tOqVr79Vl2exktLff9U28g&amp;bvm=bv.73612305,d.cWc">Steve Mann</a> to take a small trip down to California next week to check out <a href="https://www.spaceglasses.com/">Meta’s</a> <a href="http://www.495oldspanishtrail.com/">headquarters</a> and play around with their first take on commercial holographic interfaces, <a href="https://www.spaceglasses.com/">Spaceglasses</a>.</p>
+<p>I have a knack of jumping from one book to the next without finishing the first book. This is in part due to the fact that I dont mind reading multiple books at once, but also because I come across so many good reads, be it from friends, family or recommendations from strangers.</p>
 
-<p>After working with Steve Mann and his team, we were able to develop an augmented reality application (iOS/Android) which visualizes the veillances emitted from public cameras. We hope to further develop this platform for the Spaceglasses in the coming weeks.</p>
+<p>This post will serve as an ongoing list of books which I hope to read in 2015. Ive also included a small progress indicator which will be used to track my progress throughout the year.</p>
 
-<p>While I am there, I’ll be checking out a few points of interests in the surrounding areas (Cupertino, Palo Alto etc), suggestions are welcomed :)</p>
+<p>1Q84 - Haruki Murakami</p>
+
+<div id="book_1"></div>
+
+<p>Zen and the Art of Motorcycle Maintenance - Robert M. Pirsig </p>
+
+<div id="book_2"></div>
+
+<p>The Wind-Up Bird Chronicle - Haruki Murakami</p>
+
+<div id="book_3"></div>
+
+<p>Good to Great: Why Some Companies Make the Leap…and Others Don’t - James C. Collins</p>
+
+<div id="book_4"></div>
+
+<p>Happiness: A Very Short Introduction - Daniel M. Haybron) <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></p>
+
+<div id="book_10"></div>
+
+<p>Rainbows End - Vernor Vinge</p>
+
+<div id="book_5"></div>
+
+<p>Guns, Germs, and Steel - Jared Diamond</p>
+
+<div id="book_6"></div>
+
+<p>Fear and Loathing in Las Vegas - Hunter S. Thompson</p>
+
+<div id="book_7"></div>
+
+<p>Drunk Tank Pink: And Other Unexpected Forces that Shape How We Think, Feel, and Behave - Adam Alter</p>
+
+<div id="book_8"></div>
+
+<p>When Everything Feels Like the Movies - Raziel Rei</p>
+
+<div id="book_9"></div>
+
+<script>
+    $(document).ready(function(){
+    $('#book_1').goalProgress({
+        goalAmount: 100,
+        currentAmount: 30,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_2').goalProgress({
+        goalAmount: 100,
+        currentAmount: 60,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_3').goalProgress({
+        goalAmount: 100,
+        currentAmount: 50,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_4').goalProgress({
+        goalAmount: 100,
+        currentAmount: 5,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_5').goalProgress({
+        goalAmount: 100,
+        currentAmount: 0,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_6').goalProgress({
+        goalAmount: 100,
+        currentAmount: 0,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_7').goalProgress({
+        goalAmount: 100,
+        currentAmount: 0,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_8').goalProgress({
+        goalAmount: 100,
+        currentAmount: 0,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_9').goalProgress({
+        goalAmount: 100,
+        currentAmount: 0,
+        textBefore: '',
+        textAfter: ''
+    });
+    $('#book_10').goalProgress({
+        goalAmount: 100,
+        currentAmount: 100,
+        textBefore: '',
+        textAfter: ''
+    });
+    
+});
+    </script>
+
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 23 Aug 2014</span> 
+      <span id="pub-date">Published on 08 Feb 2015</span> 
         </p>
       
      
@@ -302,10 +419,10 @@
                 Other Interests
                 <br/>---------------/
                 <br/>-Tennis
-                <br/>-Reading
+                <br/>-<a href="/posts/2015/02/08/books/">Reading</a>
                 <br/>-Formula One
                 <br/>-Architecture
-                <br/>-Green Tea
+                <br/>-<a href="/posts/2014/06/17/relax/">Music</a>
             </p>
             <p class="termText right">
                 Links
