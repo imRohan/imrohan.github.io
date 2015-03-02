@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Lovingly crafted by Rohan Likhite -->
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Groovy | Rohan Likhite</title>
+    <meta name="description" content="Another silly site">
+    <meta name="author" content="Rohan Likhite">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
+</head>
+
+<body>
+
+    <div id="nav" class="animated fadeInDown">
+
+        <a target="_blank" href="http://rohanlikhite.com">
+            <div id="back">Back</div>
+        </a>
+        <a rel="leanModal" name="popOutText" href="#popOutText">
+            <div id="popOut"></div>
+        </a>
+
+
+
+
+    </div>
+    <div class="container animated fadeIn">
+        <div class="row">
+            <div class="one-half column" style="margin-top: 5%">
+                <h1>Groovy</h1>
+                <p class="small">
+                    <strong>groovy (adj.) | \ˈgrü-vē\ </strong>
+                    <br/>
+                    <ol class="small">
+                        <li>Very pleasant or very enjoyable; marvelous; wonderful; excellent; - expressing strong approval, usually of enjoyable experiences.</li>
+                        <li>Very chic; as, groovy clothes.</li>
+                        <li>Groovy is where the far out goes, man!</li>
+
+                    </ol>
+                    <a class="button" href="data/data.csv" download>Download Data</a>
+
+                </p>
+
+            </div>
+            <div class="one-half column" style="margin-top: 8%">
+                <h4>History</h4>
+                <p class="small">
+                    The emergence of “groovy” in the 1960s was actually a sort of reincarnation of the word, which had first appeared in the jazz subculture of the 1920s and was originally spelled “groovey” (“‘Groovey,’ name applied to state of mind which is conducive to good playing,” American Speech, 1937). “Groovey” itself was based on the phrase “in the groove,” used by jazz musicians to describe playing that was smooth and effortlessly excellent.
+
+                </p>
+                <h5><img class="flag" src="images/usa.png"> USA - 1920: Jazz Slang</h5>
+
+
+
+
+
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="twelve column">
+                <h3>Popularity <small>1960 - 2007</small></h3>
+                <div id="keywordGraph" class="ct-chart"></div>
+                <p class="smallCitation u-pull-right ">Source: NGRAM</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <h4>Regional Interest</h4>
+                <p>New Zealand</p>
+                <div id="country_1"></div>
+                <p>Trinidad & Tobago</p>
+                <div id="country_2"></div>
+                <p>Belgium</p>
+                <div id="country_3"></div>
+                <p>Australia</p>
+                <div id="country_4"></div>
+                <p>United States</p>
+                <div id="country_5"></div>
+                <p>United Kingdom</p>
+                <div id="country_6"></div>
+                <p>Canada</p>
+                <div id="country_7"></div>
+                <span class="smallCitation">Source: Google</span>
+            </div>
+            <div class="eight columns">
+                <h4>Trivia</h4>
+                <ul>
+                    <li>Recorded use of the word in its slang context has been found dating back to September 30, 1941</li>
+                    <li>Austin Powers says the word groovy a total of 10 times</li>
+                    <li>"Groovy" is Duke Nukem's catchphrase</li>
+                    <li>Marvel Comics produced a Silver Age comic book entitled Groovy, subtitled "Cartoons, gags, jokes."</li>
+                    <li>Groovy is a powerful, optionally typed and dynamic programming language, with static-typing and static compilation capabilities, for the Java platform</li>
+
+                    <span class="smallCitation"><a target="_blank" href="http://en.wikipedia.org/wiki/Groovy">Source: Wikipedia</a></span>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <div id="popOutText">
+        <div class="row">
+            <div class="twelve coloums">
+                <p>Thanks for checking out my small visualization.
+                    <br/>I hope to add more words in the near future.
+                    <br/>- Rohan
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="centerAll">
+                <img src="images/otis.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Quick n' Fast Load
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
+    <!--Data Viz
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="bower_components/chartist/dist/chartist.js"></script>
+    <script type="text/javascript" src="js/output.min.js"></script>
+    <script type="text/javascript">
+        $("#nav").headroom();
+    </script>
+    <!-- Chart -->
+    <script src="js/dataLoad.js"></script>
+    <!-- Typed -->
+
+    <script type="text/javascript">
+        $(function () {
+            $('a[rel*=leanModal]').leanModal({
+                top: 200,
+                overlay: 0.9,
+                closeButton: ".modal_close"
+            });
+        });
+    </script>
+ 
+</body>
+
+</html>
