@@ -74,7 +74,7 @@ function stopClock() {
 }
 
 function pauseClock() {
-    alert("on pause");
+    //alert("on pause");
 
     clicked = false;
     breakTime = false;
