@@ -105,20 +105,20 @@ if (window.DeviceMotionEvent == undefined) {
             } else if (!breakTime) {
                 stopClock()                
                 document.getElementById("bottomTag").innerHTML = "A Pomodoro Timer";
-                document.body.style.backgroundColor = "#E26A6A";
+                document.body.style.backgroundColor = "#D9304F";
                 
                 if(minDisplay > 0){
                   document.getElementById("line1").innerHTML = "Place your phone down to resume the timer.";
                   document.getElementById("total").innerHTML = "Don't Stop!";
                   document.getElementById("line2").innerHTML = "";
-                  document.body.style.backgroundColor = "#96CEB4";  
+                  document.body.style.backgroundColor = "#F2E638";  
                 }
             }
             if (lastPom > 0) {
                 document.getElementById("line1").innerHTML = "Take a little break";
                 document.getElementById("line2").innerHTML = "WOAH!";
                 document.getElementById("total").innerHTML = "<b>" + lastPom + "<br/>Poms Done";
-                document.body.style.backgroundColor = "#2ECC71";
+                document.body.style.backgroundColor = "#04BF55";
             }
 
             document.getElementById("leveled").style.display = "none";
@@ -132,7 +132,7 @@ if (window.DeviceMotionEvent == undefined) {
             document.getElementById("notLeveled").style.display = "none";
             document.getElementById("leveled").style.display = "block";
             if (!breakTime) {
-                document.body.style.backgroundColor = "#E26A6A";
+                document.body.style.backgroundColor = "#D9304F";
                 document.getElementById("bottomTag").innerHTML = "25 min = 1 Pomodoro";
             }
 
