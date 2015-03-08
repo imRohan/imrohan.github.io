@@ -398,9 +398,11 @@ input[type="button"].button-primary:focus {
 
 #desktopPopUp{
     visibility: hidden;
+    height:50px;
     display: block;
     text-transform: uppercase;
     font-weight: 900;
+    margin-top:-50px;
 }
 
 
@@ -675,7 +677,8 @@ hr {
         margin-top: -5%;
     }
     #desktopPopUp{
-     visibility: visible;   
+     visibility: visible;  
+        margin-top: 0px;
     }
 }
 
