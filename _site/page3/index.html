@@ -82,6 +82,13 @@
                 <ul class="posts-list">
                     
                     <li class="post-link">
+                        <a class="post-title hvr-float" href="/posts/2015/03/08/ketchup/">
+                            <span class="post-date">08 Mar 2015</span>
+                            Ketchup App
+                        </a>
+                    </li>
+                    
+                    <li class="post-link">
                         <a class="post-title hvr-float" href="/posts/2015/03/02/groovy/">
                             <span class="post-date">02 Mar 2015</span>
                             My foray into Etymology
@@ -192,28 +199,71 @@
   </div>
   <div id="post-info">
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/ss.png">
+      <img id="cover-photo" src="/images/ketchup.jpg">
     </div>
     <div id="info-container">
-      <h1 id="title">My foray into Etymology</h1>
-      <span id="date">02 Mar 2015</span>
+      <h1 id="title">Ketchup App</h1>
+      <span id="date">08 Mar 2015</span>
     </div>
   </div>
 
   <div class="post">
-    <h3 id="a-weekish-sprint-dedicated-to-the-word-groovy">A week(ish) sprint dedicated to the word Groovy.</h3>
+    <h3 id="meet-ketchup-a-pomodoro-timer-built-in-24-hours">Meet Ketchup, a Pomodoro Timer built in 24 hours</h3>
 
-<p>Most of last week was spent working on a little side project. Although it really does not serve any great purpose, this was a great way to keep myself busy and to create something beautiful. So, I tapped into a few sources including Google’s NGRAM db to create a small data visualization. I wanted to develop a SSW that was not only visually appealing, but also a platform which I could build upon at a later time. </p>
+<p>A <a href="https://twitter.com/RohanLikhite/status/573364575547965441">few days ago</a> I decided to build my own <a href="http://pomodorotechnique.com/timer/">Pomodoro timer</a>. The challenge, build a viable Pomodoro timer within 24 hours. Given the abundance of free Pomodoro timers available, I wanted to develop one which would be very simple to use. This is what I came up with. </p>
 
-<p>Although the site currently only displays information relating to the word Groovy, I hope to add a library of words in the near future.</p>
+<h3 id="starting-the-sprint">Starting the sprint.</h3>
+<p>The first decision I made was developing it as a web app. Ketchup lives on the internet, and therefore is available for free on any device (media queries galore). It’s a fairly simple app, so this method of deployment was quite easy to realize. Second, Ketchup uses the devices accelerometer to start and stop the timer. Why? I figured that if a user is trying to focus on work, they should be forced to put their phone down. </p>
 
-<p>Try it out here, <a href="/projects/groovy">Groovy, my foray into the world of Etymology</a></p>
+<p>I began by drawing out the requirements for the application and creating a list of features I wanted to implement within the first 24 hours. <a href="https://twitter.com/RohanLikhite/status/573383082599792640">After the main features were in place</a>, I bounced between working on the front/back end (using the pomodoro technique, naturally). Time management was key, and it was great that I could use the application while I was developing it, allowing me to do real world testing using myself as a user case.</p>
+
+<pre><code>if (window.DeviceMotionEvent == undefined) {
+		// No Sensor Detected		
+} else {
+window.ondevicemotion = function (event) {
+		// Grab x/y vals		
+    ax = Math.round(Math.abs(event.accelerationIncludingGravity.x));
+    ay = Math.round(Math.abs(event.accelerationIncludingGravity.y));        
+    // Check if Device is Tilted        
+    if (ax !== 0 | ay !== 0){        
+    		//Device is tilted            
+    } else {        	
+    		//Device is flat        
+    }
+  }
+}
+</code></pre>
+
+<p>Here is the snippet of code which checks to see if the device is tilted. The application essentially uses this logic, in conjunction with the timer to change app states. Using the onDeviceMotion event handler, I could grab the sensor data from either the accelerometer or gyroscope right through Javascript. </p>
+
+<h3 id="app-states-and-uiux">App States and UI/UX</h3>
+
+<p><img src="images/appState.jpg" width="100%" /></p>
+
+<p>Ketchup has 4 states. Start, Idle, Work, and Break. The user can navigate between each state by simply moving their device. Once a Pomodoro has been completed, the user is notified to take a break. After they’re done, the user simply has to place their device down to begin the next 25 min session. </p>
+
+<p>The UI for the app is very straightforward and simple. Users are notified of background tasks via animated images, and are notified of state changes via the changing of background colours and text. </p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Overall this sprint was an amazing experience. Building something within 24 hours on my own was challenging and it taught me a lot about agile development. There are many things which I wish to add to Ketchup (audible alerts, more features, help), and will be doing so in the coming weeks.</p>
+
+<p><img src="images/ketchupIcon.png" width="200" /></p>
+
+<p><a href="/projects/ketchup">Try it out here on your mobile phone. </a></p>
+
+<h3 id="legal">Legal</h3>
+<p>Pomodoro Technique® and Pomodoro™ are registered and filed trademarks owned by Francesco Cirillo. Ketchup is not affiliated by, associated with nor endorsed by Francesco Cirillo.</p>
+
+<h3 id="credits">Credits</h3>
+<p>Ketchup bottle designed by <a href="http://thenounproject.com/mmejules/">Madame Jules</a><br />
+Tomato Logo designed by <a href="http://thenounproject.com/olgio">Marco Olgio</a></p>
 
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 02 Mar 2015</span> 
+      <span id="pub-date">Published on 08 Mar 2015</span> 
         </p>
       
      
