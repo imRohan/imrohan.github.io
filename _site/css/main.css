@@ -213,16 +213,13 @@ a:hover {
   margin-bottom: 1.25em;
 }
 
-.post code {
-  border: 1px solid #ddd;
-  font-size: 110%;
-  color:white;
-  background-color: #25262b;
-  padding: 0 .2em;
-}
-
 .post pre code {
-  border: none;
+  display: block;
+  background: #2d2d2d;
+  color: #cccccc;
+  font-family: Menlo, Monaco, Consolas, monospace;
+  line-height: 1.5;
+  padding: 10px;
 }
 
 /* terminal */
