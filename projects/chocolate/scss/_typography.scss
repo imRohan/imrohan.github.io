@@ -1,0 +1,156 @@
+/* Typography */
+
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.big {
+    display: block;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: -.06rem;
+}
+
+h1 {
+    @include fontSize(32px);
+    @include lineHeight(1);
+}
+
+h1:before {
+    @include headerLine;
+}
+
+h2 {
+    @include fontSize(32px);
+    @include lineHeight(1);
+}
+
+h3 {
+    @include fontSize(22px);
+    @include lineHeight(3);
+}
+
+h4 {
+    @include fontSize(20px);
+    @include lineHeight(4);
+}
+
+h5 {
+    @include fontSize(18px);
+    @include lineHeight(5);
+}
+
+h6 {
+    @include fontSize(10px);
+    @include lineHeight(6);
+}
+
+.big {
+    @include fontSize(40px);
+    @include lineHeight(0);
+}
+
+.topHeading {
+    display: block;
+    margin-top: -3%;
+    margin-bottom: -2%;
+}
+
+blockquote {
+    @include fontSize(20px);
+    @include lineHeight(6);
+    font-family: 'Lora', serif;
+    margin-left: 5%;
+    padding-left: 15px;
+    border-left: $lineWidth solid $secondaryColor;
+    font-weight: 700;
+}
+
+@media (min-width: $medium-device) {
+    h1 {
+        @include fontSize(48px);
+    }
+    h1:before {
+        @include headerLine;
+    }
+    h2 {
+        @include fontSize(48px);
+    }
+    h3 {
+        @include fontSize(28px);
+    }
+    h4 {
+        @include fontSize(25px);
+    }
+    h5 {
+        @include fontSize(18px);
+    }
+    h6 {
+        @include fontSize(16px);
+    }
+    blockquote {
+        @include fontSize(24px);
+    }
+    .big {
+        @include fontSize(58px);
+    }
+}
+
+p {
+    margin-top: 0;
+    @include fontSize(14px);
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    padding-right: 3%;
+}
+
+small {
+    font-size: 60%;
+    color: $darkFont;
+    text-transform: uppercase;
+    margin-left: 0px;
+}
+
+cite {
+    color: $darkFont;
+    font-size: 60%;
+    font-style: italic;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: $codeBackground;
+    border-radius: 3px;
+    border: 1px solid $codeBackgroundDarker;
+    -moz-border-radius: 3px;
+    font-weight: 700;
+    padding: 1px 3px;
+}
+
+pre {
+    background-color: $codeBackground;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 10px 10px;
+    @include fontSize(16px);
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+pre code{
+    border: none;
+}
+/* Typography */

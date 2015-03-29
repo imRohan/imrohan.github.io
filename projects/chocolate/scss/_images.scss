@@ -1,0 +1,75 @@
+/* Images */
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    height: auto;
+    float: left;
+    margin-right: 2%;
+    @include transition(-webkit-filter 1s);
+    
+}
+
+img:hover {
+    @include filter(grayscale(0%));
+}
+
+/* Image Sizes */
+
+.fullImg {
+    max-width: 100%;
+}
+.halfImg {
+    max-width: 50%;
+}
+.quarterImg {
+    max-width: 20%;
+}
+
+/* Image Styles */ 
+
+.round {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.round img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.border {
+    margin-top:$lineWidth;
+    height: 100%;
+    width: 100%;
+    border: $lineWidth solid $primaryColor;
+    box-sizing: border-box;
+}
+
+/* Filters */
+
+.greyscale {
+    -webkit-filter: grayscale(100%);
+}
+
+.disco {
+    -webkit-animation: adjustHue 1s alternate infinite;
+}
+
+@-webkit-keyframes adjustHue {
+    0% {
+        -webkit-filter: hue-rotate(30deg);
+    }
+    50% {
+        -webkit-filter: hue-rotate(60deg);
+    }
+    100% {
+        -webkit-filter: hue-rotate(90deg);
+    }
+}
+
+
+/* Images */

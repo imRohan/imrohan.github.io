@@ -1,0 +1,44 @@
+/* Helper Classes */
+
+.centerHor {
+    display: block;
+    margin: 0 auto;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.moveDown{
+    bottom:0;
+}
+
+.banner {
+    margin-top: 3%;
+    @include bannerSize(1%);
+    border-top: $lineWidth solid $primaryColor;
+    border-bottom: ($lineWidth * 0.33) solid $primaryColor;
+    height:120px;
+    overflow-y:hidden;
+    background-color: rgba(255,255,255,0.01);
+
+}
+
+.success{
+	color: $successColor;
+}
+
+.warning{
+	color: $warningColor;
+}
+
+.alert{
+	color: $secondaryColor;
+}
+
+.center{
+    text-align:center;
+    align-content: center;
+}
+
+/* Helper Classes */

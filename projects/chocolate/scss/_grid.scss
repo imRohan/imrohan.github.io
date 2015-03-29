@@ -1,0 +1,129 @@
+/* Grid */
+
+.container {
+    position: relative;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.colCheck {
+    height: 17px;
+    width: 100%;
+    background-color: #252525;
+    border-radius: $buttonRadius;
+    -moz-border-radius: 7px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    color: $primaryColor;
+    @include transition(background-color $animationSpeed/2 ease);
+}
+.colCheck:hover{
+    background-color:$secondaryColor;
+}
+.row {
+    display: block;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    padding-top: 2%;
+}
+
+.col {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+@media (min-width: $small-device) {
+    .container {
+        width: 90%;
+        padding: 0;
+    }
+    .col {
+        margin-bottom: 1%;
+    }
+}
+@media (min-width: $medium-device) {
+    .container {
+        width: 90%;
+    }
+    .col {
+        margin-bottom: 0;
+    }
+    .alt {
+        border-top: $lineWidth solid white;
+        padding-top: 10px;
+    }
+    .one.col {
+        @include colWidth(1);
+    }
+    .two.col {
+        @include colWidth(2);
+    }
+    .three.col {
+        @include colWidth(3);
+    }
+    .four.col {
+        @include colWidth(4);
+    }
+    .five.col {
+        @include colWidth(5);
+    }
+    .six.col,
+    .half.col {
+        @include colWidth(6);
+    }
+    .seven.col {
+        @include colWidth(7);
+    }
+    .eight.col {
+        @include colWidth(8);
+    }
+    .nine.col {
+        @include colWidth(9);
+    }
+    .ten.col {
+        @include colWidth(10);
+    }
+    .eleven.col {
+        @include colWidth(11);
+    }
+    .twelve.col {
+        width: 100%;
+        margin-left: 0;
+    }
+    .oneThird.col {
+        @include colWidth(4);
+    }
+    .twoThirds.col {
+        @include colWidth(8);
+    }
+    .offsetQuarter.col {
+        margin-left: 25%;
+    }
+    .offsetOne.col {
+        margin-left: 8.33333%;
+    }
+    .offsetTwo.col {
+        margin-left: 16.66667%;
+    }
+    .offsetFour.col {
+        margin-left: 33.32%;
+    }
+    .offsetTwoThird.col {
+        margin-left: 60.0%;
+    }
+    .offsetHalf.col {
+        margin-left: 45%;
+    }
+    .col:first-child {
+        margin-left: 0;
+        float: left;
+    }
+}
+/* Grid */

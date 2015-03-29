@@ -1,0 +1,33 @@
+/* Body Styles */
+html{
+	width: 100%;
+    height: 100%;
+}
+body{ 
+	@include swissFont;
+	font-size: 1.5em;
+	font-weight: 400;
+	@include lineHeight(0);	
+	color: $lightFont;
+	background-color:$bgColor;
+	height:100%;
+	width:100%;
+}
+hr{
+	border:none;
+	height:$lineWidth;
+	color:$primaryColor;
+	background-color:$primaryColor;
+}
+
+::-moz-selection { /* Code for Firefox */
+     color: $lightFont;
+    background: $secondaryColor;
+}
+
+::selection {
+    color: $lightFont;
+    background: $secondaryColor;
+}
+
+/* Body Styles */

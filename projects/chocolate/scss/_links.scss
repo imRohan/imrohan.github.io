@@ -1,0 +1,20 @@
+/* Link */
+
+a{
+	color: $secondaryColor;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:none;
+	color: $bgColor;
+	background:$lightFont;
+}
+a:active {
+  top: 1px;
+}
+a:visited {
+ 
+}
+
+
+/* Link */
