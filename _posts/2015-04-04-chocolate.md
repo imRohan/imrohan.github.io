@@ -7,7 +7,9 @@ categories: posts
 ---
 ### Another CSS Front-End Framework?
 
-Over the past few weeks I've been building a small, responsive, front-end framework. Chocolate is a lightweight front-end, that is wrapped in a "swiss" (or international) design. I built it as an homage to the modernist graphic design movement which rose to popularity in the 1950's. This framework was built from the ground up with the twelve-column grid system in mind. Everything from the colours, to the typography has been taken into consideration to create, quite possibly, the worlds most pretentious front-end css framework. (Eat it Tyler Brûlé)
+Over the past few weeks I've been building a small, responsive, front-end framework. Chocolate is a lightweight front-end, that is wrapped in a "swiss" (or international) design. I built it as an homage to the modernist graphic design movement which rose to popularity in the 1950's. This framework was built from the ground up with the twelve-column grid system in mind.
+
+It's been fun creating, quite possibly, the worlds most pretentious front-end css framework. (Eat it Tyler Brûlé)
 
 Here is a [live demo](http://rohanlikhite.com/projects/chocolate/) 
 
