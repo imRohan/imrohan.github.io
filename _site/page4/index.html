@@ -83,6 +83,13 @@
                 <ul class="posts-list">
                     
                     <li class="post-link">
+                        <a class="post-title hvr-float" href="/posts/2015/04/04/chocolate/">
+                            <span class="post-date">04 Apr 2015</span>
+                            Chocolate Framework
+                        </a>
+                    </li>
+                    
+                    <li class="post-link">
                         <a class="post-title hvr-float" href="/posts/2015/03/08/ketchup/">
                             <span class="post-date">08 Mar 2015</span>
                             Ketchup App
@@ -200,71 +207,41 @@
   </div>
   <div id="post-info">
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/ketchup.jpg">
+      <img id="cover-photo" src="/images/chocolate.png">
     </div>
     <div id="info-container">
-      <h1 id="title">Ketchup App</h1>
-      <span id="date">08 Mar 2015</span>
+      <h1 id="title">Chocolate Framework</h1>
+      <span id="date">04 Apr 2015</span>
     </div>
   </div>
 
   <div class="post">
-    <h3 id="meet-ketchup-a-pomodoro-timer-built-in-a-day">Meet Ketchup, a Pomodoro Timer built in a day</h3>
+    <h3 id="another-css-front-end-framework">Another CSS Front-End Framework?</h3>
 
-<p>A <a href="https://twitter.com/RohanLikhite/status/573364575547965441">few days ago</a> I decided to build my own <a href="http://pomodorotechnique.com/timer/">Pomodoro timer</a>. The challenge, build a viable Pomodoro timer within 24 hours. Given the abundance of free Pomodoro timers available, I wanted to develop one which would be very simple to use. This is what I came up with. </p>
+<p>Over the past few weeks I’ve been building a small, responsive, front-end framework. Chocolate is a lightweight front-end, that is wrapped in a “swiss” (or international) design. I built it as an homage to the modernist graphic design movement which rose to popularity in the 1950’s. This framework was built from the ground up with the twelve-column grid system in mind. Everything from the colours, to the typography has been taken into consideration to create, quite possibly, the worlds most pretentious front-end css framework. (Eat it Tyler Brûlé)</p>
 
-<h3 id="starting-the-sprint">Starting the sprint.</h3>
-<p>The first decision I made was developing it as a web app. Ketchup lives on the internet, and therefore is available for free on any device (media queries galore). It’s a fairly simple app, so this method of deployment was quite easy to realize. Second, Ketchup uses the devices accelerometer to start and stop the timer. Why? I figured that if a user is trying to focus on work, they should be forced to put their phone down. </p>
+<p>Here is a <a href="http://rohanlikhite.com/projects/chocolate/">live demo</a> </p>
 
-<p>I began by drawing out the requirements for the application and creating a list of features I wanted to implement within the first 24 hours. <a href="https://twitter.com/RohanLikhite/status/573383082599792640">After the main features were in place</a>, I bounced between working on the front/back end (using the pomodoro technique, naturally). Time management was key, and it was great that I could use the application while I was developing it, allowing me to do real world testing using myself as a user case.</p>
+<h3 id="features">Features</h3>
 
-<pre><code>if (window.DeviceMotionEvent == undefined) {
-		// No Sensor Detected		
-} else {
-window.ondevicemotion = function (event) {
-		// Grab x/y vals		
-    ax = Math.round(Math.abs(event.accelerationIncludingGravity.x));
-    ay = Math.round(Math.abs(event.accelerationIncludingGravity.y));        
-    // Check if Device is Tilted        
-    if (ax !== 0 | ay !== 0){        
-    		//Device is tilted            
-    } else {        	
-    		//Device is flat        
-    }
-  }
-}
-</code></pre>
+<p>Chocolate is a responsive CSS framework which is not only lightweight and highly customizable, but also very simple to use. Built on top of SASS, Chocolate ships as standard CSS but can also be compiled from source. Like many frameworks out there, I implemented a 12 column grid system to organize and align content. The grids are sized to replicate print material which I sourced for inspiration. In addition to the basic grid, I’ve also included a few essential components such as buttons, tables, and image helper classes. </p>
 
-<p>Here is the snippet of code which checks to see if the device is tilted. The application essentially uses this logic, in conjunction with the timer to change app states. Using the onDeviceMotion event handler, I could grab the sensor data from either the accelerometer or gyroscope right through Javascript. </p>
+<h3 id="get-started">Get Started</h3>
 
-<h3 id="app-states-and-uiux">App States and UI/UX</h3>
+<p>You can download Chocolate through Bower</p>
 
-<p><img src="http://i.imgur.com/Nq2jbrn.jpg" width="100%" /></p>
+<p><code>bower install chocolate</code></p>
 
-<p>Ketchup has 4 states. Start, Idle, Work, and Break. The user can navigate between each state by simply moving their device. Once a Pomodoro has been completed, the user is notified to take a break. After they’re done, the user simply has to place their device down to begin the next 25 min session. </p>
+<p>or visit <a href="http://rohanlikhite.com/projects/chocolate/">this</a> website to download the zip archive.</p>
 
-<p>The UI for the app is very straightforward and simple. Users are notified of background tasks via animated images, and are notified of state changes via the changing of background colours and text. </p>
+<h3 id="contribute">Contribute</h3>
 
-<h3 id="conclusion">Conclusion</h3>
-
-<p>Overall this sprint was an amazing experience. Building something within 24 hours on my own was challenging and it taught me a lot about agile development. There are many things which I wish to add to Ketchup (audible alerts, more features, help), and will be doing so in the coming weeks.</p>
-
-<p><img src="http://i.imgur.com/gmnUVLI.png" width="200" /></p>
-
-<p><a href="/projects/ketchup">Try it out here on your mobile phone. </a></p>
-
-<h3 id="legal">Legal</h3>
-<p>Pomodoro Technique® and Pomodoro™ are registered and filed trademarks owned by Francesco Cirillo. Ketchup is not affiliated by, associated with nor endorsed by Francesco Cirillo.</p>
-
-<h3 id="credits">Credits</h3>
-<p>Ketchup bottle designed by <a href="http://thenounproject.com/mmejules/">Madame Jules</a><br />
-Tomato Logo designed by <a href="http://thenounproject.com/olgio">Marco Olgio</a></p>
-
+<p>This is an ongoing project of mine which I will actively contribute to when I have the time. More component modules will be added in the coming weeks. And as always contributions are more than welcome. If you would like to learn more about the design style, Smashing Magazine published <a href="http://www.smashingmagazine.com/2009/07/17/lessons-from-swiss-style-graphic-design/">this</a> lovely article on it a few years ago. I’d love to hear any feedback, suggestions, pull requests, issues, bugs, complaints, abuse or otherwise.</p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 08 Mar 2015</span> 
+      <span id="pub-date">Published on 04 Apr 2015</span> 
         </p>
       
      
