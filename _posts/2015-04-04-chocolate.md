@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chocolate Framework
+title: Chocolate.css
 cover: chocolate.png
 date:   2015-04-04 12:00:00
 categories: posts
