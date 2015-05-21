@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="http://i.imgur.com/XAC1eMO.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Rohan - iOS Now Playing</title>
+    <title>Rohan - Morning Widget</title>
     <meta name="viewport" content="width=device-width">
   
 
@@ -200,41 +200,49 @@
   </div>
   <div id="post-info">
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/ios.png">
+      <img id="cover-photo" src="/images/morning.jpg">
     </div>
     <div id="info-container">
-      <h1 id="title">iOS Now Playing</h1>
-      <span id="date">13 Apr 2014</span>
+      <h1 id="title">Morning Widget</h1>
+      <span id="date">09 May 2015</span>
     </div>
   </div>
 
   <div class="post">
-    <h3>iOS is NOT Perfect</h3>
+    <h3>Backstory</h3>
 
-<p>For the majority of users, the iOS 7 update has been quite the refreshing redesign. With skeuomorphism thrown out the window, Apple has once again found themselves designing flat, colourful user interfaces in hopes to modernize their UI. However they have not perfected the UI, yet.</p>
+<p>A few days ago, I stumbled across the wonderful world of CoffeeScript. I really wanted to dive right into this <del>wonderful</del> annoying language and felt that the best way to go about it was to make something. I&#39;ve always been a fan of open source widget engines, and wanted to make a widget of my own. This was a great little project for me to kill two birds with one stone. </p>
 
-<h3>&quot;Grids are good for the soul&quot;</h3>
+<p>Übersicht is an open source widget engine built for OSX. What&#39;s great is that it lets you run system commands and display their output on your desktop using CSS HTML5 and CoffeeScript (or JS). </p>
 
-<p>Neatly arranged items are inherently pleasing to the eye. The grid system has been a fundamental graphic design for quite some time now and has always been synonymous with the modernist movement. </p>
+<p>I decided to learn the basics of CoffeeScript syntax by building a small (yet useful) Übersicht widget called, Morning.</p>
 
-<p>Yesterday I was staring at my iPhone skipping through songs when my eye caught a small, but slightly disarranged error on the “Now Playing” screen.</p>
+<h3>What is it?</h3>
 
-<p><img src="/assets/ios/1.png" alt="iOs1"></p>
+<p>Morning is a Übersicht widget that displays the time, and greets the current logged in user with a brief salutation. It is a very minimal, which I like.</p>
 
-<p>It shouldn’t have bothered me as much as it did.</p>
+<p>It is a desktop clone of the popular Google Chrome extension, <a href="http://momentumdash.com/">Momentum</a>. </p>
 
-<p><img src="/assets/ios/2.png" alt="iOs1"></p>
+<h3>How can I install it?</h3>
 
-<p>Lets fix it.</p>
+<p>First, you&#39;ll need to install <a href="http://tracesof.net/uebersicht/">Übersicht</a>. Once that&#39;s installed, head on over to the widget gallery and download <a href="http://tracesof.net/uebersicht-widgets/#morning">Morning</a>.</p>
 
-<p><img src="/assets/ios/3.jpg" alt="iOs1"></p>
+<p>After you&#39;ve unzipped the package, place the <code>morning.widget</code> directory into your Übersicht widget directory. If needed, open morning.coffee and adjust the <code>.container</code> margins to position the widget on your screen.</p>
 
-<p>There we go.</p>
+<h3>How does it work?</h3>
+
+<p>Morning is nothing special. Simply put, it grabs the current time, figures out what part of the day it is and spits out a string. Realizing the date logic was not difficult and fairly easy to code. </p>
+
+<p>The name of the current user is not hard coded, but is found by executing the following command:  </p>
+
+<p><code>&#39;finger &#39;whoam&#39; | awk -F: &#39;{ print $3 }&#39; | head -n1 | sed &#39;s/^ // &#39;</code></p>
+
+<p>Since we only need the first name, the output is split and the first element in the array is used. I made sure to comment every section of the code, and have pushed it to GitHub for those who would like to follow along. You can check out the source <a href="https://github.com/imRohan/ubersicht-morning.widget">here</a></p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 13 Apr 2014</span> 
+      <span id="pub-date">Published on 09 May 2015</span> 
         </p>
       
      

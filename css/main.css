@@ -196,10 +196,14 @@ a:hover {
 }
 
 /* standard */
-.post pre {
+.post pre{
   border: 1px solid #ddd;
-  background-color: #25262b;
+  background-color: #73c479;
   padding: 0 .1em;
+}
+
+.post code{
+  border: none;
 }
 
 .post p {
@@ -214,13 +218,15 @@ a:hover {
   margin-bottom: 1.25em;
 }
 
-.post pre code {
-  display: block;
-  background: #2d2d2d;
-  color: #cccccc;
-  font-family: Menlo, Monaco, Consolas, monospace;
-  line-height: 1.5;
-  padding: 10px;
+code {
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  background-color: #73c479;
+  border-radius: 3px;
+  border: 1px solid #35aa3e;
+  -moz-border-radius: 3px;
+  font-weight: 700;
+  padding: 1px 3px;
 }
 
 /* terminal */

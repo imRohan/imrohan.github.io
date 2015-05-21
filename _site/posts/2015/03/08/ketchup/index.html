@@ -34,7 +34,7 @@
    
     <script type='text/javascript' async src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
     <script type="text/javascript" async src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" async src="/scripts/goalProgress.min.js"></script>
+  
 
 </head>
 
@@ -69,6 +69,13 @@
             </div>
             <div class="posts">
                 <ul class="posts-list">
+                    
+                    <li class="post-link">
+                        <a class="post-title hvr-float" href="/posts/2015/05/09/morning/">
+                            <span class="post-date">09 May 2015</span>
+                            Morning Widget
+                        </a>
+                    </li>
                     
                     <li class="post-link">
                         <a class="post-title hvr-float" href="/posts/2015/04/04/chocolate/">
@@ -202,43 +209,42 @@
   </div>
 
   <div class="post">
-    <h3 id="meet-ketchup-a-pomodoro-timer-built-in-a-day">Meet Ketchup, a Pomodoro Timer built in a day</h3>
+    <h3>Meet Ketchup, a Pomodoro Timer built in a day</h3>
 
 <p>A <a href="https://twitter.com/RohanLikhite/status/573364575547965441">few days ago</a> I decided to build my own <a href="http://pomodorotechnique.com/timer/">Pomodoro timer</a>. The challenge, build a viable Pomodoro timer within 24 hours. Given the abundance of free Pomodoro timers available, I wanted to develop one which would be very simple to use. This is what I came up with. </p>
 
-<h3 id="starting-the-sprint">Starting the sprint.</h3>
-<p>The first decision I made was developing it as a web app. Ketchup lives on the internet, and therefore is available for free on any device (media queries galore). It’s a fairly simple app, so this method of deployment was quite easy to realize. Second, Ketchup uses the devices accelerometer to start and stop the timer. Why? I figured that if a user is trying to focus on work, they should be forced to put their phone down. </p>
+<h3>Starting the sprint.</h3>
+
+<p>The first decision I made was developing it as a web app. Ketchup lives on the internet, and therefore is available for free on any device (media queries galore). It&#39;s a fairly simple app, so this method of deployment was quite easy to realize. Second, Ketchup uses the devices accelerometer to start and stop the timer. Why? I figured that if a user is trying to focus on work, they should be forced to put their phone down. </p>
 
 <p>I began by drawing out the requirements for the application and creating a list of features I wanted to implement within the first 24 hours. <a href="https://twitter.com/RohanLikhite/status/573383082599792640">After the main features were in place</a>, I bounced between working on the front/back end (using the pomodoro technique, naturally). Time management was key, and it was great that I could use the application while I was developing it, allowing me to do real world testing using myself as a user case.</p>
-
-<pre><code>if (window.DeviceMotionEvent == undefined) {
-		// No Sensor Detected		
+<div class="highlight"><pre><code class="language-text" data-lang="text">if (window.DeviceMotionEvent == undefined) {
+        // No Sensor Detected       
 } else {
 window.ondevicemotion = function (event) {
-		// Grab x/y vals		
+        // Grab x/y vals        
     ax = Math.round(Math.abs(event.accelerationIncludingGravity.x));
     ay = Math.round(Math.abs(event.accelerationIncludingGravity.y));        
     // Check if Device is Tilted        
     if (ax !== 0 | ay !== 0){        
-    		//Device is tilted            
-    } else {        	
-    		//Device is flat        
+            //Device is tilted            
+    } else {            
+            //Device is flat        
     }
   }
 }
-</code></pre>
-
+</code></pre></div>
 <p>Here is the snippet of code which checks to see if the device is tilted. The application essentially uses this logic, in conjunction with the timer to change app states. Using the onDeviceMotion event handler, I could grab the sensor data from either the accelerometer or gyroscope right through Javascript. </p>
 
-<h3 id="app-states-and-uiux">App States and UI/UX</h3>
+<h3>App States and UI/UX</h3>
 
 <p><img src="http://i.imgur.com/Nq2jbrn.jpg" width="100%" /></p>
 
-<p>Ketchup has 4 states. Start, Idle, Work, and Break. The user can navigate between each state by simply moving their device. Once a Pomodoro has been completed, the user is notified to take a break. After they’re done, the user simply has to place their device down to begin the next 25 min session. </p>
+<p>Ketchup has 4 states. Start, Idle, Work, and Break. The user can navigate between each state by simply moving their device. Once a Pomodoro has been completed, the user is notified to take a break. After they&#39;re done, the user simply has to place their device down to begin the next 25 min session. </p>
 
 <p>The UI for the app is very straightforward and simple. Users are notified of background tasks via animated images, and are notified of state changes via the changing of background colours and text. </p>
 
-<h3 id="conclusion">Conclusion</h3>
+<h3>Conclusion</h3>
 
 <p>Overall this sprint was an amazing experience. Building something within 24 hours on my own was challenging and it taught me a lot about agile development. There are many things which I wish to add to Ketchup (audible alerts, more features, help), and will be doing so in the coming weeks.</p>
 
@@ -246,13 +252,14 @@ window.ondevicemotion = function (event) {
 
 <p><a href="/projects/ketchup">Try it out here on your mobile phone. </a></p>
 
-<h3 id="legal">Legal</h3>
+<h3>Legal</h3>
+
 <p>Pomodoro Technique® and Pomodoro™ are registered and filed trademarks owned by Francesco Cirillo. Ketchup is not affiliated by, associated with nor endorsed by Francesco Cirillo.</p>
 
-<h3 id="credits">Credits</h3>
-<p>Ketchup bottle designed by <a href="http://thenounproject.com/mmejules/">Madame Jules</a><br />
-Tomato Logo designed by <a href="http://thenounproject.com/olgio">Marco Olgio</a></p>
+<h3>Credits</h3>
 
+<p>Ketchup bottle designed by <a href="http://thenounproject.com/mmejules/">Madame Jules</a><br/>
+Tomato Logo designed by <a href="http://thenounproject.com/olgio">Marco Olgio</a></p>
 
   </div>
   <div class="colophon">

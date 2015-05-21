@@ -34,7 +34,7 @@
    
     <script type='text/javascript' async src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
     <script type="text/javascript" async src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" async src="/scripts/goalProgress.min.js"></script>
+  
 
 </head>
 
@@ -69,6 +69,13 @@
             </div>
             <div class="posts">
                 <ul class="posts-list">
+                    
+                    <li class="post-link">
+                        <a class="post-title hvr-float" href="/posts/2015/05/09/morning/">
+                            <span class="post-date">09 May 2015</span>
+                            Morning Widget
+                        </a>
+                    </li>
                     
                     <li class="post-link">
                         <a class="post-title hvr-float" href="/posts/2015/04/04/chocolate/">
@@ -195,41 +202,49 @@
   </div>
   <div id="post-info">
     <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/chocolate.png">
+      <img id="cover-photo" src="/images/morning.jpg">
     </div>
     <div id="info-container">
-      <h1 id="title">Chocolate.css</h1>
-      <span id="date">04 Apr 2015</span>
+      <h1 id="title">Morning Widget</h1>
+      <span id="date">09 May 2015</span>
     </div>
   </div>
 
   <div class="post">
-    <h3 id="another-css-front-end-framework">Another CSS Front-End Framework?</h3>
+    <h3>Backstory</h3>
 
-<p>Over the past few weeks I’ve been building, quite possibly, the worlds most pretentious front-end css framework. (Eat it Tyler Brûlé). Chocolate is a lightweight, responsive front-end, that is wrapped in a “swiss” (or international) design style. Inspired by the modernist graphic design movement which rose to popularity in the 1950’s, this framework was built from the ground up with the twelve-column grid system in mind.</p>
+<p>A few days ago, I stumbled across the wonderful world of CoffeeScript. I really wanted to dive right into this <del>wonderful</del> annoying language and felt that the best way to go about it was to make something. I&#39;ve always been a fan of open source widget engines, and wanted to make a widget of my own. This was a great little project for me to kill two birds with one stone. </p>
 
-<p>Here is a <a href="http://rohanlikhite.com/projects/chocolate/">live demo</a> </p>
+<p>Übersicht is an open source widget engine built for OSX. What&#39;s great is that it lets you run system commands and display their output on your desktop using CSS HTML5 and CoffeeScript (or JS). </p>
 
-<h3 id="features">Features</h3>
+<p>I decided to learn the basics of CoffeeScript syntax by building a small (yet useful) Übersicht widget called, Morning.</p>
 
-<p>Chocolate is a responsive CSS framework which is not only lightweight and highly customizable, but also very simple to use. Built on top of SASS, Chocolate ships as standard CSS but can also be compiled from source. Like many frameworks out there, I implemented a 12 column grid system to organize and align content. The grids are sized to replicate print material which I sourced for inspiration. In addition to the basic grid, I’ve also included a few essential components such as buttons, tables, and image helper classes. </p>
+<h3>What is it?</h3>
 
-<h3 id="get-started">Get Started</h3>
+<p>Morning is a Übersicht widget that displays the time, and greets the current logged in user with a brief salutation. It is a very minimal, which I like.</p>
 
-<p>You can download Chocolate through Bower</p>
+<p>It is a desktop clone of the popular Google Chrome extension, <a href="http://momentumdash.com/">Momentum</a>. </p>
 
-<p><code>bower install chocolate</code></p>
+<h3>How can I install it?</h3>
 
-<p>or visit <a href="http://rohanlikhite.com/projects/chocolate/">this</a> website to download the zip archive.</p>
+<p>First, you&#39;ll need to install <a href="http://tracesof.net/uebersicht/">Übersicht</a>. Once that&#39;s installed, head on over to the widget gallery and download <a href="http://tracesof.net/uebersicht-widgets/#morning">Morning</a>.</p>
 
-<h3 id="contribute">Contribute</h3>
+<p>After you&#39;ve unzipped the package, place the <code>morning.widget</code> directory into your Übersicht widget directory. If needed, open morning.coffee and adjust the <code>.container</code> margins to position the widget on your screen.</p>
 
-<p>This is an ongoing project of mine which I will actively contribute to when I have the time. More component modules will be added in the coming weeks. And as always contributions are more than welcome. If you would like to learn more about the design style, Smashing Magazine published <a href="http://www.smashingmagazine.com/2009/07/17/lessons-from-swiss-style-graphic-design/">this</a> lovely article on it a few years ago. I’d love to hear any feedback, suggestions, pull requests, issues, bugs, complaints, abuse or otherwise.</p>
+<h3>How does it work?</h3>
+
+<p>Morning is nothing special. Simply put, it grabs the current time, figures out what part of the day it is and spits out a string. Realizing the date logic was not difficult and fairly easy to code. </p>
+
+<p>The name of the current user is not hard coded, but is found by executing the following command:  </p>
+
+<p><code>&#39;finger &#39;whoam&#39; | awk -F: &#39;{ print $3 }&#39; | head -n1 | sed &#39;s/^ // &#39;</code></p>
+
+<p>Since we only need the first name, the output is split and the first element in the array is used. I made sure to comment every section of the code, and have pushed it to GitHub for those who would like to follow along. You can check out the source <a href="https://github.com/imRohan/ubersicht-morning.widget">here</a></p>
 
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on 04 Apr 2015</span> 
+      <span id="pub-date">Published on 09 May 2015</span> 
         </p>
       
      
