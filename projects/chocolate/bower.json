@@ -1,6 +1,6 @@
 {
   "name": "chocolate",
-  "version": "0.0.4",
+  "version": "1.0.3",
   "homepage": "https://github.com/imRohan/chocolate-framework",
   "authors": [
     "Rohan <rlikhite@gmail.com>"
@@ -22,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "~3.0.2"
+    "normalize.css": "~3.0.2",
+    "jquery": "~2.1.4"
   }
 }
