@@ -12,13 +12,13 @@
   max-height: 300px;
   margin-left: 0;
   overflow: hidden;
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  background-size: 3px 3px;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 5px 5px;
+  -moz-background-size: 5px 5px;
+  background-size: 5px 5px;
   padding: 0% 2% 3% 3%; }
 
 #hero .headerLine {
@@ -27,6 +27,9 @@
   line-height: 1.33333;
   padding-top: 5%; }
 
+@media only screen and (max-width: 400px) {
+  #hero .headerLine {
+    font-size: 1.55em; } }
 #hero .big {
   font-size: 4.0625em;
   line-height: 1.4; }
@@ -37,6 +40,10 @@
   font-size: 0.8125em;
   line-height: 1.06667; }
 
+@media only screen and (max-width: 400px) {
+  #hero p {
+    font-size: 0.60938em;
+    line-height: 1.26667; } }
 /* Hero */
 /* Body Styles */
 html {
