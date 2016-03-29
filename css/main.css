@@ -40,15 +40,15 @@ body {
 
 body {
     color: #4a4a4a;
-    background-color: #fafbfc;
-    font-family: 'Raleway', Arial, sans-serif;
+    background-color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 400;
     font-size: 0.85em;
     overflow: hidden;
 }
 
 a {
-    color: #35aa3e;
+    color: #26ADEF;
     text-decoration: none;
     border: none;
 }
@@ -178,7 +178,7 @@ a:hover {
 }
 
 #title {
-    color: #4a4a4a;
+    color: #000;
     margin-bottom: 0.35em;
     font-size: 3em;
     line-height: 40px;
@@ -220,10 +220,12 @@ a:hover {
 }
 
 .post p {
-    font-family: 'Source Sans Pro', Arial, sans-serif;
-    font-size: 17px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 1.3em;
     margin-bottom: 1.45em;
     text-align: justify;
+    font-weight: lighter;
+    line-height: 1.5em;
 }
 
 .post ul,
@@ -237,7 +239,7 @@ code {
     color: #fff;
     background-color: #73c479;
     border-radius: 3px;
-    border: 1px solid #35aa3e;
+    border: 1px solid #26ADEF;
     -moz-border-radius: 3px;
     font-weight: 700;
     padding: 1px 3px;
@@ -309,6 +311,7 @@ code {
     font-size: 0.65em;
     display: block;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 #sidebar-button {
@@ -382,7 +385,7 @@ code {
 #profilePic {
     top: 0;
     border-radius: 50%;
-    background: url(../images/head.png);
+    background: url(https://avatars1.githubusercontent.com/u/3347296?v=3&s=460);
     background-repeat: no-repeat;
     background-size: cover;
     width: 80px;
@@ -549,19 +552,19 @@ code {
 
 .btn-4 {
     border-radius: 50px;
-    border: 2px solid #35AA3E;
-    color: #35AA3E;
+    border: 2px solid #26ADEF;
+    color: #26ADEF;
     overflow: hidden;
 }
 
 .btn-4:active {
-    border-color: #35AA3E;
-    color: #35AA3E;
+    border-color: #26ADEF;
+    color: #26ADEF;
 }
 
 .btn-4:hover {
-    border-color: #17954c;
-    background: #17954c;
+    border-color: #0a88ff;
+    background: #0a88ff;
     color: #fff;
 }
 
@@ -641,7 +644,7 @@ code {
 }
 
 div.progressBar {
-    background: #35AA3E;
+    background: #26ADEF;
     color: #fff;
     font-size: 1.5em;
     font-family: 'helvetica neue', helvetica, arial, sans-serif;
@@ -671,7 +674,7 @@ span.goalAmount {
 }
 
 .pace .pace-progress {
-    background: #22df80;
+    background: #26ADEF;
     position: fixed;
     z-index: 2000;
     top: 0;
