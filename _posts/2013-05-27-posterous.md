@@ -5,7 +5,7 @@ cover: posterous.png
 date:   2013-05-24 12:00:00
 categories: posts
 ---
-###Posterous is Closing up Shop
+### Posterous is Closing up Shop
 
 With Posterous [shutting down](https://posterous.com/bye.html)their servers for good, it was about time that I figured out a way to archive and migrate over to another platform. Enter Tumblr, the leading free blogging platform that we all have come to love. The problem with migrating hundreds of posts from one host to another is that you have to deal with pagination. When a visitor navigates to a website it is highly unlikely that they will navigate into the archives of pagination, and will usually only press “next page” a handfull of times. 
 
