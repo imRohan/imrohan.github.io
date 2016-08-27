@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/rohanlikhite
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://rohanlikhite.com
+  * I am rohanlikhite (https://keybase.io/rohanlikhite) on keybase.
+  * I have a public key ASArKbJOWKNkeeIBwSWX7hEfT1PES0capni8a8J9LiAdpQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101cc6bc6e4cba7705d2d206274b1228e55dbb5379e28df0bdc5483caa9892b28860a",
+            "host": "keybase.io",
+            "kid": "01202b29b24e58a36479e201c12597ee111f4f53c44b471aa678bc6bc27d2e201da50a",
+            "uid": "cba72ea5b21f6caf3654cd68af673c19",
+            "username": "rohanlikhite"
+        },
+        "service": {
+            "hostname": "rohanlikhite.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1472305912,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1472305796,
+        "hash": "90c910f7126edb1f6c86b8be14a16ad2282a2025a87cc4a7f14df8dc0b750c71956808776a8c414956f69ad572d03c54f6503201cba6b96d78b066e21c99e1a9",
+        "seqno": 605022
+    },
+    "prev": "941afaac18b82d9164e43219379ffa6c54a2216fae32c58644e94dfed5a06a4c",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKymyTlijZHniAcEll+4RH09TxEtHGqZ4vGvCfS4gHaUKp3BheWxvYWTFAvt7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxY2M2YmM2ZTRjYmE3NzA1ZDJkMjA2Mjc0YjEyMjhlNTVkYmI1Mzc5ZTI4ZGYwYmRjNTQ4M2NhYTk4OTJiMjg4NjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMmIyOWIyNGU1OGEzNjQ3OWUyMDFjMTI1OTdlZTExMWY0ZjUzYzQ0YjQ3MWFhNjc4YmM2YmMyN2QyZTIwMWRhNTBhIiwidWlkIjoiY2JhNzJlYTViMjFmNmNhZjM2NTRjZDY4YWY2NzNjMTkiLCJ1c2VybmFtZSI6InJvaGFubGlraGl0ZSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoicm9oYW5saWtoaXRlLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTYifSwiY3RpbWUiOjE0NzIzMDU5MTIsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ3MjMwNTc5NiwiaGFzaCI6IjkwYzkxMGY3MTI2ZWRiMWY2Yzg2YjhiZTE0YTE2YWQyMjgyYTIwMjVhODdjYzRhN2YxNGRmOGRjMGI3NTBjNzE5NTY4MDg3NzZhOGM0MTQ5NTZmNjlhZDU3MmQwM2M1NGY2NTAzMjAxY2JhNmI5NmQ3OGIwNjZlMjFjOTllMWE5Iiwic2Vxbm8iOjYwNTAyMn0sInByZXYiOiI5NDFhZmFhYzE4YjgyZDkxNjRlNDMyMTkzNzlmZmE2YzU0YTIyMTZmYWUzMmM1ODY0NGU5NGRmZWQ1YTA2YTRjIiwic2Vxbm8iOjksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAdbZSG0hFTD1w0wSFi3BW8I00t7lI58CI7VlLH3xCsicDOaiA/1L/AzIOA972WR6nciZ4AH+ivgcZAsPPzhnFBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBO0p/XkiIXw+8DPPNhlbPLXDf4MLrRvUxftBUJk5NOGo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rohanlikhite
+
+==================================================================
