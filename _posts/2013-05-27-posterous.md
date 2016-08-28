@@ -15,5 +15,5 @@ By downloading the archive of my Posterous site I was able to sort out all 500+ 
 
 This was a fun weekend project that was relatively easy to accomplish. 
 
-You can view the proof of concept [here](http://dm.finearts.yorku.ca/~rlikhite/posterous/)
+You can view the proof of concept [here](https://github.com/imRohan/posterousBackup)
 
