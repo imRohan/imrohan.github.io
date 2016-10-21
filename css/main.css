@@ -178,11 +178,12 @@ a:hover {
 }
 
 #title {
-    color: #000;
+    color: #26ADEF;
     margin-bottom: 0.35em;
     font-size: 5em;
     line-height: 0.8em;
     text-transform: uppercase;
+    font-family: 'Permanent Marker', 'Montserrat', 'Helvetica', Arial, sans-serif;
 }
 
 .post {
