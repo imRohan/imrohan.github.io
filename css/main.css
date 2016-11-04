@@ -41,7 +41,7 @@ body {
 body {
     color: #4a4a4a;
     background-color: #ffffff;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-weight: 400;
     font-size: 0.85em;
     overflow: hidden;
@@ -183,7 +183,7 @@ a:hover {
     font-size: 5em;
     line-height: 0.8em;
     text-transform: uppercase;
-    font-family: 'Permanent Marker', 'Montserrat', 'Helvetica', Arial, sans-serif;
+    font-family: 'Permanent Marker', 'Helvetica', Arial, sans-serif;
 }
 
 .post {
@@ -407,7 +407,6 @@ code {
     overflow: hidden;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    cursor: move;
 }
 
 #termIcons {
