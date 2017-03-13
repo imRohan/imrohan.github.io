@@ -95,7 +95,6 @@ textarea {
   width: 100%;
   display: block;
   text-align: center;
-  color: white;
   z-index: 9999;
   position: fixed;
   padding-top: 10%;
@@ -103,12 +102,15 @@ textarea {
 
 .timer-container{
  font-family: 'Montserrat', sans-serif;
+ font-weight: 700;
+ color: white;
  text-shadow: 0px 0px 35px rgb(71, 81, 88);
 }
 
 .timer-container p{
   margin: 0px;
   font-size: 3rem;
+  padding: 0 6rem;
 }
 
 .emoji-container{
