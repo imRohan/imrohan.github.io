@@ -103,16 +103,22 @@ textarea {
 
 .timer-container{
  font-family: 'Montserrat', sans-serif;
- font-size: 6em;
  text-shadow: 0px 0px 35px rgb(71, 81, 88);
 }
 
 .timer-container p{
   margin: 0px;
+  font-size: 3rem;
+}
+
+.emoji-container{
+  font-size: 6rem;
+
 }
 
 .red{
   color: #de3d3d;
+  font-size: 6rem;
 }
 
 /* ==========================================================================
