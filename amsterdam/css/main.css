@@ -1,6 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Raleway');
 
 html {
     color: #222;
@@ -11,6 +11,7 @@ html {
 
 body{
   overflow: hidden;
+  background: black;
 }
 
 ::-moz-selection {
@@ -63,59 +64,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.main{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
 .background{
-  height: 95vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(https://source.unsplash.com/collection/556932/1600x900);
+  height: 100%;
+  width: 100%;
+  background-image: url(..//img/map.png);
   overflow: hidden;
   background-size: cover;
   position: absolute;
-  border: 1em solid white;
-}
-.background {
-  -webkit-animation: filter-animation 20s infinite;
+  opacity: 0.7;
+  z-index: 1;
 }
 
-@-webkit-keyframes filter-animation {
-  0% {
-    -webkit-filter: sepia(0) blur(0px) grayscale(0);
-  }
-  50% {
-    -webkit-filter: sepia(0.5) blur(1px) grayscale(0.5);
-  }
-  100% {
-    -webkit-filter: sepia(0.2.5) blur(0px) grayscale(0.25);
-  }
-}
-
-.timer-container {
-  width: 100%;
+.text-title{
+  color: white;
+  position: absolute;
+  z-index: 999;
+  background-red;
   display: block;
-  text-align: center;
-  z-index: 9999;
-  position: fixed;
-  padding-top: 10%;
+  right: 2%;
+  top: 75%;
 }
 
-.timer-container{
- font-family: 'Montserrat', sans-serif;
- font-weight: 700;
- color: white;
- text-shadow: 0px 0px 35px rgb(71, 81, 88);
+.text-bold{
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 10vw;
 }
 
-.timer-container p{
-  margin: 0px;
-  font-size: 3rem;
-  padding: 0 6rem;
-}
-
-.emoji-container{
-  font-size: 6rem;
-
+.text-superscript{
+  font-size: 2vw;
+  font-weight: 400;
+  float: right;
+  margin-bottom: -30px;
 }
 
 .red{
