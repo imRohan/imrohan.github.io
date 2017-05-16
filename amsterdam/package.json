@@ -1,0 +1,13 @@
+{
+  "name": "AmsterdamDataViz",
+  "version": "1.0.0",
+  "description": "Quantify Amsterdam Trip",
+  "main": "index.html",
+  "repository": "imrohan.github.io/amsterdam",
+  "author": "Rohan Likhite",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "vue": "^2.3.3"
+  }
+}

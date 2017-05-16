@@ -13,10 +13,20 @@
 
     </head>
     <body>
-      <div class="background"></div>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-      <script src="js/vendor/countdown.min.js"></script>
-      <script src="js/timer.js"></script>
+      <div class="main">
+        <div class="text-title">
+          <div class="text-superscript">
+            {{mode.subtitle}}
+          </div>
+          <div class="text-bold">
+            {{mode.title}}
+          </div>
+        </div>
+        <div class="background"></div>
+      </div>
+      <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="node_modules/vue/dist/vue.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/vueLogic.js"></script>
     </body>
 </html>
