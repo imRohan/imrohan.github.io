@@ -12,12 +12,29 @@ Vue.component('hero-title', {
   },
   template: `<div class='text-title'>
               <div class='text-superscript'>
-                {{getSubtitle}}
+                <span class='subtitle'>{{getSubtitle}}</span>
+                <span class='date-picker'>
+                  <ul>
+                    <li v-on:click='changeData(1)'>8</li>
+                    <li v-on:click='changeData(2)'>9</li>
+                    <li v-on:click='changeData(3)'>10</li>
+                    <li v-on:click='changeData(4)'>11</li>
+                    <li v-on:click='changeData(5)'>12</li>
+                    <li v-on:click='changeData(6)'>13</li>
+                    <li v-on:click='changeData(0)'>All</li>
+                  </ul>
+                </span>
               </div>
               <div class='text-bold'>
                 {{getTitle}}
               </div>
             </div>`,
+  methods: {
+    changeData: function(index) {
+      _this = this;
+      _this.mode.index = index;
+    }
+  }
 });
 
 Vue.component('info-widget', {

@@ -5,17 +5,21 @@ var vueMain = (function () {
       el: '.main',
       data: {
         mode: {
-          name: 'Home',
+          index: 0,
           title: 'Amsterdam',
           subtitle: 'May 8th - 14th',
-          data:[
-            {item: "6000", desc: "steps"},
-            {item: "2km", desc: "traveled"},
+        },
+        travelData:[
+          [
+            {item: "5km", desc: "traveled"},
             {item: "6000", desc: "steps"},
             {item: "6000", desc: "steps"},
             {item: "6000", desc: "steps"},
           ],
-        }
+          [
+            {item: "2km", desc: "traveled"},
+          ],
+        ],
       }
     });
   };

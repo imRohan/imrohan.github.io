@@ -14,7 +14,7 @@
     </head>
     <body>
       <div class="main">
-        <info-widget :datasets="mode.data"></info-widget>
+        <info-widget :datasets="travelData[mode.index]"></info-widget>
         <hero-title :mode="mode"></hero-title>
         <div class="background"></div>
       </div>
