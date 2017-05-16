@@ -70,6 +70,7 @@ textarea {
   width: 100vw;
   position: relative;
 }
+
 .background{
   height: 100%;
   width: 100%;
@@ -101,6 +102,38 @@ textarea {
   font-weight: 400;
   float: right;
   margin-bottom: -30px;
+}
+
+.info-widget{
+  position: absolute;
+  display: block;
+  z-index: 999;
+  padding: 10px;
+  color: white;
+}
+
+.widget-list{
+  list-style-type: none;
+}
+
+.widget-list li{
+  margin-bottom: -20px;
+}
+
+.list-number, .list-description{
+  display: inline-block;
+}
+
+.list-number{
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 3vw;
+  margin-right: 0.5em;
+  float: left;
+}
+
+.list-description{
+  font-size: 2vw;
+  float: right;
 }
 
 .red{
