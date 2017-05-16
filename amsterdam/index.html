@@ -14,14 +14,7 @@
     </head>
     <body>
       <div class="main">
-        <div class="text-title">
-          <div class="text-superscript">
-            {{mode.subtitle}}
-          </div>
-          <div class="text-bold">
-            {{mode.title}}
-          </div>
-        </div>
+        <hero-title :mode="mode"></hero-title>
         <div class="background"></div>
       </div>
       <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
