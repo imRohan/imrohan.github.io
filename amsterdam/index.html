@@ -14,12 +14,14 @@
     </head>
     <body>
       <div class="main">
+        <info-widget :datasets="mode.data"></info-widget>
         <hero-title :mode="mode"></hero-title>
         <div class="background"></div>
       </div>
       <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
       <script src="node_modules/vue/dist/vue.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/components.js"></script>
       <script src="js/vueLogic.js"></script>
     </body>
 </html>
