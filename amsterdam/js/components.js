@@ -12,16 +12,12 @@ Vue.component('hero-title', {
   },
   template: `<div class='text-title'>
               <div class='text-superscript'>
-                <span class='subtitle'>{{getSubtitle}}</span>
+                <span class='subtitle'>May {{getSubtitle}}</span>
                 <span class='date-picker'>
                   <ul>
-                    <li v-on:click='changeData(1)'>8</li>
-                    <li v-on:click='changeData(2)'>9</li>
-                    <li v-on:click='changeData(3)'>10</li>
-                    <li v-on:click='changeData(4)'>11</li>
-                    <li v-on:click='changeData(5)'>12</li>
-                    <li v-on:click='changeData(6)'>13</li>
-                    <li v-on:click='changeData(0)'>All</li>
+                    <li v-on:click="changeData(1, '8th')">8</li>
+                    <li v-on:click="changeData(2, '9th')">9</li>
+                    <li v-on:click="changeData(0, '8th - 14th')">All</li>
                   </ul>
                 </span>
               </div>
@@ -30,9 +26,10 @@ Vue.component('hero-title', {
               </div>
             </div>`,
   methods: {
-    changeData: function(index) {
+    changeData: function(index, subtitle) {
       _this = this;
       _this.mode.index = index;
+      _this.mode.subtitle = subtitle;
     }
   }
 });
