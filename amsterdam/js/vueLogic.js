@@ -4,11 +4,15 @@ var vueMain = (function () {
     new Vue({
       el: '.main',
       data: {
-        mode: {
-          index: 0,
-          title: 'Amsterdam',
-          subtitle: '8th - 14th',
-        },
+        index: 0,
+        title: 'Amsterdam',
+        subtitle: '8th - 14th',
+        dataset: [
+                  {item: "5km", desc: "traveled"},
+                  {item: "6000", desc: "steps"},
+                  {item: "6000", desc: "steps"},
+                  {item: "6000", desc: "steps"}
+                 ],
         travelData:[
           [
             {item: "5km", desc: "traveled"},
@@ -52,6 +56,12 @@ var vueMain = (function () {
             {item: "5", desc: "Flights Climbed"},
           ],
         ],
+      },
+      watch: {
+        index: function() {
+          _this = this;
+          _this.dataset = _this.travelData[_this.index];
+        }
       }
     });
   };

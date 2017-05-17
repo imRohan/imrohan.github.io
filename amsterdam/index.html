@@ -15,8 +15,8 @@
     </head>
     <body>
       <div class="main">
-        <info-widget :datasets="travelData[mode.index]"></info-widget>
-        <hero-title :mode="mode"></hero-title>
+        <info-widget :dataset="dataset"></info-widget>
+        <hero-title :title="title" :subtitle="subtitle"></hero-title>
         <div class="background"></div>
       </div>
       <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>

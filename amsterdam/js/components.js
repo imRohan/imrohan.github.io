@@ -1,19 +1,19 @@
 Vue.component('hero-title', {
-  props: ['mode'],
+  props: ['title', 'subtitle'],
   computed: {
     getTitle: function() {
       _this = this;
-      return _this.mode.title;
+      return _this.title;
     },
     getSubtitle: function() {
       _this = this;
-      return _this.mode.subtitle;
+      return _this.subtitle;
     },
   },
   template: `<div class='text-title'>
               <div class='text-superscript'>
                 <span class='subtitle'>May {{getSubtitle}}</span>
-                <span class='date-picker animated fadeInUpBig'>
+                <span class='date-picker animated bounceInUp'>
                   <ul>
                     <li v-on:click="changeData(1, '8th')">8</li>
                     <li v-on:click="changeData(2, '9th')">9</li>
@@ -33,21 +33,20 @@ Vue.component('hero-title', {
   methods: {
     changeData: function(index, subtitle) {
       _this = this;
-      _this.mode.index = index;
-      _this.mode.subtitle = subtitle;
+      _parent = _this.$parent;
+      _parent.index = index;
+      _parent.subtitle = subtitle;
     }
   }
 });
 
 Vue.component('info-widget', {
-  props: ['datasets'],
-  computed: {
-  },
-  template: `<div class='info-widget'>
+  props: ['dataset'],
+  template: `<div class='info-widget animated slideInLeft'>
               <ul class='widget-list'>
-                <li v-for="dataset in datasets">
-                  <div class='list-number'>{{dataset.item}}</div>
-                  <div class='list-description'>{{dataset.desc}}</div>
+                <li v-for="set in dataset">
+                  <div class='list-number'>{{set.item}}</div>
+                  <div class='list-description'>{{set.desc}}</div>
                 </li>
               </ul>
             </div>`,
