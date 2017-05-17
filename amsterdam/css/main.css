@@ -1,6 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:700');
 
 html {
     color: #222;
@@ -89,11 +89,11 @@ textarea {
   background-red;
   display: block;
   right: 2%;
-  top: 70%;
+  bottom: 0px;
 }
 
 .text-bold{
-  font-family: 'Alfa Slab One', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 8vw;
 }
 
@@ -130,12 +130,15 @@ textarea {
 }
 
 .date-picker li{
+  font-family: 'Poppins', sans-serif;
   display: inline-block;
   float: left;
   margin-right: 3px;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 1.5em;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.6em;
+  font-size: 1em;
+  border-radius: 1.6em;
   background: white;
   text-align: center;
   cursor: pointer;
@@ -155,7 +158,7 @@ textarea {
 }
 
 .widget-list li{
-  margin-bottom: -20px;
+  margin-bottom: 3px;
 }
 
 .list-number, .list-description{
@@ -163,13 +166,16 @@ textarea {
 }
 
 .list-number{
-  font-family: 'Alfa Slab One', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 4vw;
+  line-height: 4vw;
   margin-right: 0.5em;
 }
 
 .list-description{
+  font-family: 'Open Sans', sans-serif;
   font-size: 3vw;
+  float: right;
 }
 
 .red{

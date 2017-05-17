@@ -13,10 +13,15 @@ Vue.component('hero-title', {
   template: `<div class='text-title'>
               <div class='text-superscript'>
                 <span class='subtitle'>May {{getSubtitle}}</span>
-                <span class='date-picker'>
+                <span class='date-picker animated fadeInUpBig'>
                   <ul>
                     <li v-on:click="changeData(1, '8th')">8</li>
                     <li v-on:click="changeData(2, '9th')">9</li>
+                    <li v-on:click="changeData(3, '10th')">10</li>
+                    <li v-on:click="changeData(4, '11th')">11</li>
+                    <li v-on:click="changeData(5, '12th')">12</li>
+                    <li v-on:click="changeData(6, '13th')">13</li>
+                    <li v-on:click="changeData(7, '14th')">14</li>
                     <li v-on:click="changeData(0, '8th - 14th')">All</li>
                   </ul>
                 </span>
