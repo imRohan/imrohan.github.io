@@ -103,7 +103,7 @@ textarea {
   width: 100%;
   height: 30px;
   position: absolute;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .text-title:hover .date-picker{
@@ -142,6 +142,11 @@ textarea {
   background: white;
   text-align: center;
   cursor: pointer;
+  border: 3px solid white;
+}
+
+.date-picker li.active{
+  border: 3px solid #ff4700;
 }
 
 
