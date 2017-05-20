@@ -6,7 +6,7 @@ var vueMain = (function () {
       data: {
         index: 0,
         title: 'Amsterdam',
-        subtitle: '8th - 14th',
+        subtitle: 'Hover Over Me',
         dataset: [
                   {item: "65.1km", desc: "Distance Traveled"},
                   {item: "90265", desc: "Steps"},
@@ -21,7 +21,7 @@ var vueMain = (function () {
             {item: "210", desc: "Pictures Taken"}
           ],
           [
-            {item: "4.3km", desc: "Distance Traveled"},
+            {item: "4.3", unit: "km", desc: "Distance Traveled"},
             {item: "6184", desc: "Steps"},
             {item: "12", desc: "Flights Climbed"},
             {item: "14", desc: "Pictures Taken"}
@@ -64,12 +64,31 @@ var vueMain = (function () {
           ],
         ],
       },
+      updated: function() {
+        _this = this;
+        _numberContainers = $('.js-animate-number');
+        $.each(_numberContainers, function(index, container){
+          _element = $(container);
+          console.log(_element)
+        });
+      },
       watch: {
         index: function() {
           _this = this;
           _this.dataset = _this.travelData[_this.index];
         }
-      }
+      },
+      methods: {
+        animateNumber: function(element){
+          setInterval(function(){ 
+            _number = element.data('number');
+            _unit = element.data('unit');
+            _base = parseFloat(element.html()).toFixed(1);
+            console.log(_base);
+            debugger;
+          }, 300);
+        }, 
+      },
     });
   };
   
