@@ -37,7 +37,7 @@ Vue.component('hero-title', {
       _element = event.target;
       _elementIndex = $(_element).index();
       _parent.index = _elementIndex;
-      _parent.subtitle = "May " + subtitle;
+      _parent.subtitle = `May ${subtitle}`;
     },
     isActive: function(date) {
       _this = this;
