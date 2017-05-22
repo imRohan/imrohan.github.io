@@ -69,7 +69,6 @@ var vueMain = (function () {
         _numberContainers = $('.js-animate-number');
         $.each(_numberContainers, function(index, container){
           _element = $(container);
-          console.log(_element)
         });
       },
       watch: {
