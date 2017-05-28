@@ -1,6 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:700');
 
 html {
     color: #222;
@@ -70,6 +70,7 @@ textarea {
   width: 100vw;
   position: relative;
 }
+
 .background{
   height: 100%;
   width: 100%;
@@ -88,19 +89,99 @@ textarea {
   background-red;
   display: block;
   right: 2%;
-  top: 75%;
+  bottom: 0px;
 }
 
 .text-bold{
-  font-family: 'Alfa Slab One', sans-serif;
-  font-size: 10vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 8vw;
 }
 
 .text-superscript{
   font-size: 2vw;
   font-weight: 400;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  margin-top: -30px;
+}
+
+.text-title:hover .date-picker{
+  display: block;
+}
+
+.date-picker, .subtitle{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.subtitle{
+  right: 0;
+  position: absolute;
+}
+
+.date-picker{
+  display: none;
+  color: black;
+}
+
+.date-picker ul{
+  list-style-type: none;
+  margin: 0px;
+}
+
+.date-picker li{
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  float: left;
+  margin-right: 3px;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.6em;
+  font-size: 1em;
+  border-radius: 1.6em;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+.date-picker li.active{
+  border: 3px solid #ff4700;
+}
+
+
+.info-widget{
+  position: absolute;
+  display: block;
+  z-index: 999;
+  padding: 10px;
+  color: white;
+}
+
+.widget-list{
+  list-style-type: none;
+}
+
+.widget-list li{
+  margin-bottom: 3px;
+}
+
+.list-number, .list-description{
+  display: inline-block;
+}
+
+.list-number{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4vw;
+  line-height: 4vw;
+  margin-right: 0.5em;
+}
+
+.list-description{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3vw;
   float: right;
-  margin-bottom: -30px;
 }
 
 .red{

@@ -4,29 +4,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Next Stop, Amsterdam</title>
+        <title>Amsterdam - Quantified</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 
     </head>
     <body>
       <div class="main">
-        <div class="text-title">
-          <div class="text-superscript">
-            May 8th - 14th
-          </div>
-          <div class="text-bold">
-            Amsterdam
-          </div>
-        </div>
+        <info-widget :dataset="dataset"></info-widget>
+        <hero-title :title="title" :subtitle="subtitle"></hero-title>
         <div class="background"></div>
       </div>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-      <script src="js/vendor/countdown.min.js"></script>
-      <script src="js/timer.js"></script>
+      <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+      <script src="node_modules/vue/dist/vue.min.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/components.js"></script>
+      <script src="js/vueLogic.js"></script>
     </body>
 </html>
