@@ -178,12 +178,11 @@ a:hover {
 }
 
 #title {
-    color: #26ADEF;
+    color: #464646;
     margin-bottom: 0.35em;
     font-size: 5em;
     line-height: 0.8em;
-    text-transform: uppercase;
-    font-family: 'Permanent Marker', 'Helvetica', Arial, sans-serif;
+    font-family: 'Vesper Libre', 'Helvetica', Arial, sans-serif;
 }
 
 .post {
@@ -236,11 +235,12 @@ a:hover {
 }
 
 code {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier;
     color: #fff;
-    background-color: #73c479;
+    font-size: 0.8em;
+    background-color: #5d5d5d;
     border-radius: 3px;
-    border: 1px solid #26ADEF;
+    border: 1px solid #c5c5c5;
     -moz-border-radius: 3px;
     font-weight: 700;
     padding: 1px 3px;
