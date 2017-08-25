@@ -2,13 +2,13 @@
 layout: post
 title: Nightwatch + Webpack
 cover: nightwatch.jpg
-date:   2017-08-08 12:00:00
+date:   2017-08-25 12:00:00
 categories: posts
 ---
 
 ### Intro
 
-So you've set up a fancy new JavaScript project and the first thing you're probably thinking about is setting up a proper integration testing suite right? Of course you are, because [test driven development](https://softwareengineering.stackexchange.com/questions/41409/why-does-tdd-work) is the bee's knees!
+So you've started a fancy new JavaScript project and the first thing you're probably thinking about is setting up a proper integration testing suite right? Of course you are, because [test driven development](https://softwareengineering.stackexchange.com/questions/41409/why-does-tdd-work) is the bee's knees!
 
 Why are integration tests so much better than unit tests? Well, the answer is simple, why test parts of a tech stack separately when you could just test the whole solution from end-to-end!
 
@@ -64,7 +64,7 @@ There are a few things that you should double check. Mainly the relative paths t
 and the `.jar` file for Selenium. All three should be in the `node_modules` folder.
 
 Tests should be stored in a `./tests/` folder. For more info in actually writing tests,
-check [this] (http://nightwatchjs.org/#writing-tests) page out.
+check [this](http://nightwatchjs.org/#writing-tests) page out.
 
 ### Running Nightwatch
 
