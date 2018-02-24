@@ -1,6 +1,4 @@
 /*****************************************************************************/
-
-
 /*
 /* Rohan Likhite 2015
 /*
@@ -26,7 +24,7 @@ h2 {
     margin-right: -2.15em;
     left: 0;
     height: 128px;
-    background: #fafbfc;
+    background: #f1f1f1;
     z-index: -999;
     width: 140%;
 }
@@ -39,8 +37,8 @@ body {
 }
 
 body {
-    color: #4a4a4a;
-    background-color: #ffffff;
+    color: #000000;
+    background-color: #f1f1f1;
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight: 400;
     font-size: 0.85em;
@@ -48,9 +46,14 @@ body {
 }
 
 a {
-    color: #26ADEF;
+    color: #000000;
     text-decoration: none;
     border: none;
+}
+
+.post a {
+    background: #ead750;
+    padding: 0 0.5em;
 }
 
 a img {
@@ -552,20 +555,14 @@ code {
 
 .btn-4 {
     border-radius: 50px;
-    border: 2px solid #26ADEF;
-    color: #26ADEF;
+    border: 2px solid #ead750;
+    color: #000000;
+    background: #ead750;
     overflow: hidden;
 }
 
-.btn-4:active {
-    border-color: #26ADEF;
-    color: #26ADEF;
-}
-
 .btn-4:hover {
-    border-color: #0a88ff;
-    background: #0a88ff;
-    color: #fff;
+  border-color: #dec132;  
 }
 
 .btn-4:before {
