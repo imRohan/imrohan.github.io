@@ -444,9 +444,11 @@ code {
     margin-top: 3px;
     font-size: 1em;
     font-family: 'PT Mono', Arial, sans-serif;
-    ;
     color: #c7c7c7;
     margin-right: 10px;
+}
+.termText > a {
+  color: #ead750;;
 }
 
 .left {
