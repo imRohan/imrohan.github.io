@@ -8,10 +8,6 @@
     max-width: 95%;
   }
 
-  .header {
-    padding-top: 3.45em;
-  }
-
   .posts {
     font-size: 0.9em;
   }
@@ -30,10 +26,6 @@
   #title {
     font-size: 2.75em;
     line-height: 35px;
-  }
-
-  .header {
-    padding-top: 3.85em;
   }
 
   .posts {
@@ -60,9 +52,6 @@
   #logo {
     max-width: 75px;
   }
-    #superLines{
-     max-width: 35%;   
-    }
 
   #cover-photo-container {
     text-align: center;
