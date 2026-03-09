@@ -52,7 +52,7 @@ a {
 }
 
 .post a {
-    background: #ead750;
+    background: #74df80;
     padding: 0 0.5em;
 }
 
@@ -79,13 +79,11 @@ a:hover {
 /*****************************************************************************/
 
 #logo {
-    max-width: 128px;
-    margin-bottom: 10px;
+    max-width: 200px;
 }
 
 #logoimage {
     z-index: 999;
-    margin-bottom: 10px;
 }
 
 .posts a {
@@ -295,6 +293,7 @@ code {
 .header {
     text-align: center;
     padding-top: 2.5em;
+    padding-bottom: 1em;
     font-size: 1.1em;
 }
 
@@ -429,7 +428,7 @@ code {
     margin-right: 10px;
 }
 .termText > a {
-  color: #ead750;;
+  color: #74df80;;
 }
 
 .left {
@@ -538,14 +537,14 @@ code {
 
 .btn-4 {
     border-radius: 50px;
-    border: 2px solid #ead750;
+    border: 2px solid #74df80;
     color: #000000;
-    background: #ead750;
+    background: #74df80;
     overflow: hidden;
 }
 
 .btn-4:hover {
-  border-color: #dec132;  
+  border-color: #78b67f;  
 }
 
 .btn-4:before {
